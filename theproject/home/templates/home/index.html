@@ -1,0 +1,272 @@
+{% include "base.html" %}
+{% block content %} 
+{% load static %}
+
+           <!--hero area starts here-->    
+            <div class="sub-header">
+            <!--right side-->
+                <div class="sub-header-main-container">
+                    <div class="writeup">
+                        <h2> Your lightning Fast </h2>
+                        <p class="p1">Delivery Partner</p>
+                        <p class="p2">
+                          Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Magni
+                           assumenda hic, recusandae <br> rem quisquam veniam <br>nesciunt animi
+                           quo saepe corporis quia ab delectus, <br>a quidem aperiam sed sit ex optio?  
+                        </p>
+
+                    </div>
+
+                    <div class="search-bar">
+                        <form action="" method="post" class="search-container" class="form-group">
+                            <input type="text" name="" required placeholder="ZIP code or City ">
+                            <button type="submit"> Search</button>
+                        </form>
+                    </div>
+                  <div class="company-stats">
+                     <div class="first-stat">
+                        <p>232</p>
+                         <div class="Underscore"> </div>
+                        <h3>Clients</h3>
+                     </div>
+                     <div class="second-stat">
+                        <p>18</p>
+                        <div class="Underscore"> </div>
+                        <h3>Project</h3>
+                     </div>
+                     <div class="Third-stat">
+                        <p>50</p>
+                        <div class="Underscore"> </div>
+                        <h3>Support</h3>
+                     </div>
+                     <div class="Fourth-stat">
+                        <p>32</p>
+                        <div class="Underscore"> </div>
+                        <h3>Workers</h3>
+                     </div>
+                  </div>
+                </div>
+            <!--right side ends-->
+            
+            <!--left side-->
+                <div class="company-logo">
+                    <img src="{% static 'logistic-landing-page-2/images/hero-img.svg' %}" alt="company Logo">
+                </div>
+                <!--left side ends-->
+            </div>
+            <!-- hero area ends here-->
+        </div>
+        </section>
+    </header>
+     <main>
+        <!--FIrst section starts here-->
+       
+        <!--FIrst section ends here-->
+
+        <!--Second section starts here-->
+        <section>
+         <div class="ssch-container"> 
+            <div class="second-sec-head">
+              <h1> OUR SERVICES</h1>
+              <div class="ssh-underscore"></div>
+            </div>
+         </div>
+        <!--First row-->
+            <div class="row1">
+                {% for i in services %}
+                <div class="img1">
+                    {% comment %} <div class="img1-upper-content">
+                        <img src="{{ i.image.url }}">
+                    </div> {% endcomment %}
+                     
+                    {% if i in services %}
+                     <div class="img1-upper-content">
+                        <img src="{{ i.image.url }}">
+                     </div>
+                     {% else %}
+                     <div class="img1-upper-content">
+                        <img src="{% static 'logistic-landing-page-2/images/trucking.jpg' %}">
+                     </div>
+                    {% endif %}
+
+                    <div class="img1-lower-content">
+                        <h2>{{i.name}}</h2>
+                        <P> 
+                            {{ i.description}}
+                            {{ x.date}}
+                        </P>
+                    </div>
+                </div>
+                {% endfor %}
+               
+                
+            </div>
+        <!--First row ends-->
+                      
+        <!--Second row starts-->
+            <div class="row2">
+                <div class="img002">
+                    <div class="img002-upper-content">
+                        <img src="{% static 'logistic-landing-page-2/images/images.jpg' %}">
+                    </div>
+
+                    <div class="img002-lower-content">
+                        <h2>CARGO</h2>
+                        <P> 
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quidem laudantium ad ea voluptas, libero doloribus iste consequatur
+                            fugit nihil velit, magnam unde quo
+                        </P>
+                    </div>
+                </div>
+                <div class="img003">
+                    <div class="img003-upper-content">
+                        <img src="{% static 'logistic-landing-page-2/images/download.jpg' %}">
+                    </div>
+
+                    <div class="img003-lower-content">
+                        <h2>LOGISTICS</h2>
+                        <P> 
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quidem laudantium ad ea voluptas, libero doloribus iste consequatur
+                            fugit nihil velit, magnam unde quo
+                        </P>
+                    </div>
+                </div>
+                <div class="img004">
+                    <div class="img004-upper-content">
+                        <img src="{% static 'logistic-landing-page-2/images/storage.jpg' %}">
+                    </div>
+
+                    <div class="img004-lower-content">
+                        <h2>STORAGE</h2>
+                        <P> 
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quidem laudantium ad ea voluptas, libero doloribus iste consequatur
+                            fugit nihil velit, magnam unde quo
+                        </P>
+                    </div>
+                </div>
+            </div>
+        <!--second row ends-->    
+        </section>
+        <!--second section ends here-->
+
+        <!--Third section starts here-->
+        <section>
+          <div class="call-to-action">
+           <div class="call-to-action-sub">
+            <h2> Call To Action</h2>
+            <h4>  
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quidem laudantium ad ea voluptas, <br>libero doloribus iste consequatur
+                fugit nihil velit, magnam 
+            </h4>
+            <button>Call To Action</button>
+           </div>  
+          </div>  
+        </section>
+        <!--Third section ends here-->
+
+        <!--Fourth section starts here-->
+        <section>
+            <div class="fourth-sec-container">
+              <div class="fourth-sec-upper1">
+                <div class="fourth-sec-img1">
+                    <img src="{% static 'logistic-landing-page-2/images/img1.jpg' %}" alt="">
+                </div>
+                <div class="fourth-sec-text1">
+                    <h2>
+                        Voluptatem dignissimos provident quasi <br>voluptates sit assumenda.
+                    </h2>
+                    <em>
+                        Quidem laudantium ad ea voluptas, libero doloribus iste consequatur
+                        fugit nihil velit
+                    </em>
+                    <h5>
+                        <span>&#x2713;</span>fugit nihil velit, magnam unde quo
+                    </h5>
+                     <h5>
+                        <span>&#x2713;</span>fugit nihil velit, magnam unde quo
+                    </h5>
+                     <h5>
+                        <span>&#x2713;</span>fugit nihil velit, magnam unde quo
+                    </h5>
+                </div>
+              </div>  
+
+              <div class="fourth-sec-upper2">
+                <div class="fourth-sec-text2">
+                    <h2>
+                        Voluptatem dignissimos provident quasi 
+                    </h2>
+                    <em>
+                        Quidem laudantium ad ea voluptas, libero doloribus iste consequatur
+                        fugit nihil velit
+                    </em>
+                 <div class="fs2-lower-text">
+                    <h5>
+                       <span>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        </span>
+                    </h5>
+                 </div>
+                </div>
+                <div class="fourth-sec-img2">
+                    <img src="{% static 'logistic-landing-page-2/images/img2.jpg' %}" alt="">
+                </div>
+              </div>
+
+              <div class="fourth-sec-upper3">
+                <div class="fourth-sec-img3">
+                    <img src="{% static 'logistic-landing-page-2/images/img3.jpg' %}" alt="">
+                </div>
+                <div class="fourth-sec-text3">
+                      <h2>
+                        Voluptatem dignissimos provident quasi  <br>voluptates sit assumenda.
+                    </h2>
+                    <em>
+                        Quidem laudantium ad ea voluptas, libero doloribus iste consequatur
+                        fugit nihil velit
+                    </em>
+                    <h5>
+                        &#x2713;fugit nihil velit, magnam unde quo
+                    </h5>
+                     <h5>
+                        &#x2713;fugit nihil velit, magnam unde quo
+                    </h5>
+                     <h5>
+                        &#x2713;fugit nihil velit, magnam unde quo
+                    </h5>
+                </div>
+              </div>
+
+              <div class="fourth-sec-upper4">
+                 <div class="fourth-sec-text4">
+                    <h2>
+                        Voluptatem dignissimos provident quasi  <br>voluptates sit assumenda.
+                    </h2>
+                    <em>
+                        Quidem laudantium ad ea voluptas, libero doloribus iste consequatur
+                        fugit nihil velit
+                    </em>
+                    <h5>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </h5>
+                </div>
+                <div class="fourth-sec-img4">
+                    <img src="{% static 'logistic-landing-page-2/images/features-4.jpg' %}" alt="">
+                </div>
+            </div>
+        </section>
+        <!--Fourth section ends here-->
+
+        <!--fifth section starts here-->
+         <!--fifth section ends here-->
+
+        <!--sixth section starts here-->
+     
+        <!--sixth section ends here-->
+    </main>
+ {% endblock content %}
+    

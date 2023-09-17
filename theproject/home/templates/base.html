@@ -1,0 +1,81 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Logis</title>
+</head>
+<body>
+    <link rel="stylesheet" href="{% static 'logistic-landing-page-2/css/style2.css' %}">
+    <header>
+        <section>
+         <div class="main-container-wrapper">   
+        <!--Navigation-->
+            <div class="main-header-container">
+                <nav>
+                    <div class="nav-container">
+                    <!--nav brand-->
+                        <div class="logo">
+                            <h2>Logis<h2></h2>
+                        </div>
+                        <!--nav brand end-->
+                        <!-- nav items-->
+                        <div class="nav-bar">
+                            <ul>
+                                <li> <a href="{% url 'home' %}"> Menu </a> </li>
+                                <li> <a href="{% url 'about' %}"> About </a> </li>
+                                <li> <a href="{% url 'contact' %}"> Contact </a> </li>
+                                <li> <a href="{% url 'blog' %}"> Blog </a> </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="nav-button">
+                            {{request.user.username}}
+                            {% if user.is_authenticated %}
+
+                            <a href="{% url 'login-user' %}">
+                                <button>
+                                  Logout
+                                </button>
+                            </a>
+                            
+                            {% else %}
+
+                            <a href="{% url 'logoutUser' %}">
+                                <button>
+                                  Login
+                                </button>
+                            </a>
+
+                            {% endif %}
+
+                        </div>
+
+
+                        <div style = "color: white; margin: 10px;">    
+                          <b>Welcome</b> {{request.user.username}}
+                          {{request.user.profile_picture}}
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
+      <!--nav ends here-->
+
+      {% block content %}
+     
+      {% endblock content  %}
+
+
+      {% comment %} <footer>
+           <h1>This is the footer</h1>
+           <h1>This is the footer</h1>
+           <h1>This is the footer</h1>
+           <h1>This is the footer</h1>
+           <h1>This is the footer</h1>
+      </footer> {% endcomment %}
+  </body>
+  </html>

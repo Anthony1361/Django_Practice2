@@ -1,0 +1,164 @@
+body{
+    background-color: #000;
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .main-container{
+    width: 95vw;
+    height: 96.5vh;
+    background-color: rgb(243, 220, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+.container{ 
+    display: flex;
+    width: 870px;
+    height: 539px; 
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #8d7f7f;
+}
+    
+.left-container{
+    height: 100%;
+    background-color: #fcfcfc;
+    border-radius: 10px 0px 0px 10px;
+    flex: 1;
+    text-align: center;
+
+}
+
+.right-container{
+    flex-wrap: wrap;
+    height: 100%;
+    flex: 1;
+    background-color:rgb(255, 87, 87);
+    border-radius: 0px 10px 10px 0px;  
+
+} 
+
+.twitter-icon{
+    border-radius: 50%;
+     height: 30px;
+     border-width: 3px;
+     border: 1px solid rgb(219, 216, 217);
+     padding-left: 7px;
+     padding-right: 5px;
+     padding-top: 3px;
+     padding-bottom: 5px;
+}
+
+.fb-icon{
+    border-radius: 50%;
+    height: 30px;
+    border-width: 3px;
+    border: 1px solid rgb(219, 216, 217);
+    padding-right: 5px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+    color: #221f1f;
+    margin-right: 15px;
+}
+
+
+
+
+.log{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    padding-top: 30px;
+    font-size: 4.5ch;
+    ;
+}
+
+.user-email input{
+    outline: none;
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    background-color: rgb(240, 237, 234);
+    border: none;
+    padding-left: 10px;
+    font-style: bold;
+}
+
+.user-password input{
+    outline: none;
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    background-color: rgb(240, 237, 234);
+    margin-top: 20px;
+    border: none;
+    padding-left: 10px;
+    font-style: bold;
+}
+
+button{
+    width: 149px;
+    background-color: rgba(202, 50, 3, 0.842);
+    border-radius: 50px;
+    font-size: small;
+    color: #fcfcfc;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: bold;
+}
+
+.Use-account h4{
+    font-family: sans-serif;
+    padding-top: 30px;
+    font-weight: 2;
+    font-size: 2ch;
+
+}    
+
+.recover-password h4{
+    font-family: sans-serif;
+    font-weight: 1;
+    font-size: 2.2ch;
+}
+
+.First-writeup h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 4.3ch;
+    font-weight: 900;
+    text-align: justify;
+    align-items: center;
+    text-align-last: center;
+    padding-top: 30%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.second-writeup .p1{
+   color: #fcfcfc;
+   font-size: 2.2ch;
+   font-family: sans-serif;
+   padding-left: 67px;
+   line-height: 4px;
+}
+
+.second-writeup .p2{
+    color: #fcfcfc;
+    font-size: 2.2ch;
+    font-family: sans-serif;
+    padding-left: 89px;
+    line-height: 4px;
+}
+
+.second-writeup .p3{
+    color: #fcfcfc;
+    font-size: 2.2ch;
+    font-family: sans-serif;
+    padding-left: 125px;
+    line-height: 4px;
+}
+
